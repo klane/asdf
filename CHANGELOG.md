@@ -1,5 +1,50 @@
 # Changelog
 
+## [0.8.0](https://www.github.com/klane/asdf/compare/v0.7.8...v0.8.0) (2021-07-15)
+
+
+### Features
+
+* asdf latest defer to plugin to determine the latest version ([#938](https://www.github.com/klane/asdf/issues/938)) ([664d82e](https://www.github.com/klane/asdf/commit/664d82ed8a734eb30988840829a972f8ddd8e523))
+* cmd to print debug information ([#787](https://www.github.com/klane/asdf/issues/787)) ([8ca2af3](https://www.github.com/klane/asdf/commit/8ca2af3316be03f980598c5dbcb8152b6b56e96a))
+* configurable plugin repo last check time ([#957](https://www.github.com/klane/asdf/issues/957)) ([1716afa](https://www.github.com/klane/asdf/commit/1716afa02125aa322d8a688ff4b3e95f2e08b33c))
+* plugin documentation callback support 🎉 ([#757](https://www.github.com/klane/asdf/issues/757)) ([cc0023b](https://www.github.com/klane/asdf/commit/cc0023b022c6db52ab46885430805fe7e0804bfc))
+* support for "latest" in shell, local, and global ([#802](https://www.github.com/klane/asdf/issues/802)) ([0edb505](https://www.github.com/klane/asdf/commit/0edb50547c21b3c7f4f1379b898b7fef7e9a2da3))
+
+
+### Bug Fixes
+
+* _where_ bug when multiple versions are selected ([#790](https://www.github.com/klane/asdf/issues/790)) ([77a748d](https://www.github.com/klane/asdf/commit/77a748d70a8c9ddf9588546801c5535b5d1edb3a)), closes [#690](https://www.github.com/klane/asdf/issues/690)
+* <plugin update all> to latest commit on default branch for each plugin ([#800](https://www.github.com/klane/asdf/issues/800)) ([456d8e3](https://www.github.com/klane/asdf/commit/456d8e36ca76b36b848453a63b54ffeb214bce7e))
+* asdf shell command docs & help output ([#737](https://www.github.com/klane/asdf/issues/737)) ([f5c7dae](https://www.github.com/klane/asdf/commit/f5c7dae331af14563de141dc0500234bab03f4a7))
+* ban the sort -V command ([#755](https://www.github.com/klane/asdf/issues/755)) ([aef4ae8](https://www.github.com/klane/asdf/commit/aef4ae8b5abced2225ea0359b643cf9901558074))
+* broken link in contributing.md ([#852](https://www.github.com/klane/asdf/issues/852)) ([90b92b9](https://www.github.com/klane/asdf/commit/90b92b99be8fb8f482e0c41e5e867302ed97806e))
+* CI formatting use editorconfig ([#751](https://www.github.com/klane/asdf/issues/751)) ([50feef2](https://www.github.com/klane/asdf/commit/50feef2a777af222ad6a73c19dc113e0c100a012))
+* consistent system completion ([#911](https://www.github.com/klane/asdf/issues/911)) ([f4a80b5](https://www.github.com/klane/asdf/commit/f4a80b53df851e4d2af7921211b60d48773ccb8d))
+* delete instructions to add dependencies with Homebrew ([#937](https://www.github.com/klane/asdf/issues/937)) ([24d79d4](https://www.github.com/klane/asdf/commit/24d79d4d9256d7d130fbaf8a4b7dc34aeb1b01d7))
+* docs file rename ([#809](https://www.github.com/klane/asdf/issues/809)) ([2bf076f](https://www.github.com/klane/asdf/commit/2bf076f3d33087966cdb4de52cfdf0042eb7c076))
+* fish init command ([#792](https://www.github.com/klane/asdf/issues/792)) ([1479ec8](https://www.github.com/klane/asdf/commit/1479ec83be6f39776a99d0b8da6fa59580586d93))
+* format command-reshim ([43d6fef](https://www.github.com/klane/asdf/commit/43d6fef000a2d7ab5ab2cc662f7d066d3489e8b1))
+* help text as per new feats in [#633](https://www.github.com/klane/asdf/issues/633) ([#991](https://www.github.com/klane/asdf/issues/991)) ([0d95663](https://www.github.com/klane/asdf/commit/0d956635b5cabe35f0895121929e8e668a3ee03d))
+* incorrect version output in asdf current ([#746](https://www.github.com/klane/asdf/issues/746)) ([e9c149e](https://www.github.com/klane/asdf/commit/e9c149ea212cf5bf822bbce8d01aae88caaa30b2))
+* insert error handling in list-all & download plugin scripts ([#881](https://www.github.com/klane/asdf/issues/881)) ([a7d3661](https://www.github.com/klane/asdf/commit/a7d3661f6c53b24ae1c21e93f94209f3af243349))
+* lint scripts for local and CI ([#961](https://www.github.com/klane/asdf/issues/961)) ([5dafbc8](https://www.github.com/klane/asdf/commit/5dafbc8e390eacbcfcf97d6d2890e0aa6ef9cd60))
+* pipe find into while ([26d2c64](https://www.github.com/klane/asdf/commit/26d2c64477a1faabedd9a5f97aa7da706988cd72))
+* plugin test to emit error message when `latest` fails ([#772](https://www.github.com/klane/asdf/issues/772)) ([1a01356](https://www.github.com/klane/asdf/commit/1a01356935aef4eeae9a5172c063d1f4651ee149)), closes [#756](https://www.github.com/klane/asdf/issues/756)
+* plugin update portability ([#924](https://www.github.com/klane/asdf/issues/924)) ([d7b62d2](https://www.github.com/klane/asdf/commit/d7b62d2e920d2395f8812e5a5ff9d34b2986c452))
+* print tool-versions file dir on shim error ([#750](https://www.github.com/klane/asdf/issues/750)) ([a5c815b](https://www.github.com/klane/asdf/commit/a5c815b6d47c47f416006bad2de4b6955af65490))
+* remove `column` command in favor of awk ([#721](https://www.github.com/klane/asdf/issues/721)) ([1b7b4da](https://www.github.com/klane/asdf/commit/1b7b4da0a6ac7e878acd556aa47bc71a4d49d4fc))
+* remove find -print0 ([b9228a2](https://www.github.com/klane/asdf/commit/b9228a26de6a0337a7b59fb5252323d368a72a92))
+* remove sort --version-sort from command-latest as list is already sorted ([#700](https://www.github.com/klane/asdf/issues/700)) ([0f80ac3](https://www.github.com/klane/asdf/commit/0f80ac356730a3a04a378b39a6d964d5938832b6))
+* revert to commands to precompute brew prefix on addition to shell config ([1a4c1c1](https://www.github.com/klane/asdf/commit/1a4c1c15b8505cfe193953db54419cd8406671a1))
+* rm asdf current header row for now ([#793](https://www.github.com/klane/asdf/issues/793)) ([b178cb0](https://www.github.com/klane/asdf/commit/b178cb07a7e9e446bea9e2e3e9090dde52994141))
+* shellcheck errors and typo ([6af66dc](https://www.github.com/klane/asdf/commit/6af66dc88cc079de560f08f53734709b22d212ba))
+* shims break when POSIXLY_CORRECT=1 ([0de6910](https://www.github.com/klane/asdf/commit/0de6910d1f99c9576f8c2e5a916644fed99cddb5)), closes [#581](https://www.github.com/klane/asdf/issues/581)
+* support latest with filter on local and global ([#633](https://www.github.com/klane/asdf/issues/633)) ([5cf8f89](https://www.github.com/klane/asdf/commit/5cf8f8962fbd5fe2bc86856bc4676f88e1aa8885))
+* typo and refactor on top of master ([0c263ad](https://www.github.com/klane/asdf/commit/0c263ad70090dd832215ff20f12dd4e14855fdbe))
+* typo causing plugin-test to erroneously fail ([b6deb14](https://www.github.com/klane/asdf/commit/b6deb141b53e63be92ac5bd5ef80818cd218e212))
+* typo in subshell for fish instructions ([a76880d](https://www.github.com/klane/asdf/commit/a76880d25a3f58ec01147eab8b01f34503b903bd))
+
 ## 0.8.1
 
 Features
